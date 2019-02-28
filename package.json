@@ -12,6 +12,7 @@
   "author": "I_amCapitalT/Prakash Pokhrel",
   "license": "ISC",
   "dependencies": {
+    "discord.js": "^11.4.2",
     "g": "^2.0.1",
     "nodemon": "^1.18.9"
   }

@@ -25,12 +25,12 @@ fs.readdir("./commands/", (err, files) => {
 
 bot.on("guildMemberAdd", async member => {
   let welcomechann = member.guild.channels.find(`name`,"user-messages");
-  welcomechann.send(`YAY! ${member.user.username} has joined the party at ${member.guild.name}!`)
+  welcomechann.send(`Member joined.${member.user.username}!`)
 });
 
 bot.on("guildMemberRemove", async member => {
   let leavechann = member.guild.channels.find(`name`,"user-messages");
-  leavechann.send(`I can't belive ${member.user.username} left us behind`);
+  leavechann.send(`Member left, ${member.user.username}`);
 });
 
 bot.on("ready", async () => {
